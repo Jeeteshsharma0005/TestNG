@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+
+    <!--<groups>
+        <run>
+            <include name="smoke"/>
+        </run>
+    </groups>-->
+    
+    <parameter name="courseName" value="Selenium" />
+    <parameter name="cityName" value="Delhi" />
+    <parameter name="browserName" value="chrome" />
+
+    <listeners>
+        <listener class-name="testng.failtestrun.IAnnonation"/>
+    </listeners>
+    
+    <test verbose="3" preserve-order="true" parallel="false" thread-count="3" name="C:/Users/pit/IdeaProjects/maven">
+        <classes>
+            <class name="testng.Priority" />
+        </classes>
+    </test>
+</suite>
